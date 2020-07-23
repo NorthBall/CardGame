@@ -28,7 +28,7 @@ public:
 	UPROPERTY(BlueprintAssignable,BlueprintCallable, Category = "Event")
 		FClickItOn ClickItOn;
 	friend bool operator<(const UBaseCardWidget& first, const UBaseCardWidget& second);
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable,BlueprintPure)
 		FLinearColor BrushHighlight();
 	
 };
